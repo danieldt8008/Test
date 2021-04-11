@@ -1,0 +1,26 @@
+function fn1() {
+  document.getElementById("result").innerHTML += "fn1 gets called";
+}
+
+
+
+2.js
+
+function clickedTheButton() {
+  fn1();
+} 
+
+
+
+
+index.html
+
+<html>
+  <head>
+  </head>
+  <body>
+    <button onclick="clickedTheButton()">Click me</button>
+    <script type="text/javascript" src="1.js"></script>
+	<script type="text/javascript" src="2.js"></script>
+  </body>
+ </html>
